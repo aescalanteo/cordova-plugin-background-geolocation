@@ -160,7 +160,7 @@
                 android:name="com.marianhello.bgloc.service.LocationServiceImpl"
                 /> -->
             <service android:enabled="true" android:exported="false" android:foregroundServiceType="location|dataSync" android:name="com.marianhello.bgloc.service.LocationServiceImpl" />
-            <service android:exported="true" android:foregroundServiceType="location|dataSync" android:name="com.marianhello.bgloc.sync.SyncService" android:process=":sync">
+            <service android:exported="true" android:foregroundServiceType="location|dataSync" android:name="com.marianhello.bgloc.sync.SyncService" android:process=":sync" tools:node="replace">
                 <intent-filter>
                     <action android:name="android.content.SyncAdapter" />
                 </intent-filter>
